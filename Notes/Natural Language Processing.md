@@ -19,7 +19,7 @@ print("Your text goes in here")
 ```
 
 
-## [[Headers]]
+
 
 
 ## Comments
@@ -59,5 +59,40 @@ favourite_food = input("What is your favourite food?")
 `=` --> assignment operator
 `input...` --> value
 
+### Naming
 
+What you can do:
+1. Name them with letters, numbers, and underscores
+2. Names **should** start with a lowercase letter
+
+What you can't do:
+1. You **can't** name them with spaces or symbols
+2. You **can't** name them with certain names that are reserved
+	1. e.g. `if, while, for, and, or, ...`
+
+A good name is something like this:
+
+```python
+favourite_food
+fave_food
+date_of_birth
+student_number
+```
+
+Bad names are like this:
+
+```python
+Favourite_food
+a
+num
+aa
+aaa
+aaaa
+```
+
+
+## [[Headers]]
 ## [[Strings]]
+
+## [[Design]]
+
