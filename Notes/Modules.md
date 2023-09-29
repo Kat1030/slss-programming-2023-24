@@ -16,4 +16,5 @@ import time
 
 # Pause code for 1 second
 time.sleep(1)
+
 ```
