@@ -42,4 +42,3 @@ else:
 
     # Print out that chosen response
     print(random_food_response)
-
