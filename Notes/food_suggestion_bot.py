@@ -24,6 +24,8 @@ fast_food = ["hamburgers", "fries", "french fries", "burgers", "chicken wings", 
 italian_food = [ "italian", "italian food", "pasta", "pizza", "canneloni", "tiramisu","prosciutto", "spaghetti", "meatballs", "spaghetti and meatballs", "fettucine", "fettucine alfredo", "risotto", "braciole"]
 # Japanese Cuisine
 japanese_food = ["japanese", "japanese food", "takoyaki", "ramen", "tonkatsu", "sushi", "sashimi", "chicken karage", "bento box", "teryaki", "tempura", "gyozas", "yakitori", "onigiri", "donburi", "soba", "udon", "miso soup", "okonomiyaki", "yakisoba"]
+# Korean Cuisine
+korean_food = ["korean", "korean food", "bibimbap", "bulgogi", "kimchi", "hangover stew", "samgyeopsal", "jjajangmyeon", "tteokbokki", "kimbap", "japchae"]
 # If they answer with any of the above, suggest a restaurant accordingly
 if fave_food.lower().strip("!.,?") in chinese_food:
     print("I see you might like Chinese food!")
@@ -49,10 +51,17 @@ elif fave_food.lower().strip("!,.?") in italian_food:
 elif fave_food.lower().strip("!,.?") in japanese_food:
     print("I see you might like Japanese food.")
     time.sleep(1)
-    print("I suggest G-Men.")
+    print("I suggest G-Men Ramen.")
     time.sleep(1)
     print("Here's their address.")
     print("3711 Bayview St, Richmond, BC V7E 3B6")
+elif fave_food.lower().stript(".,!?") in korean_food:
+    print("I see you might like Korean food!")
+    time.sleep(1)
+    print("I suggest DAAN Korean Cuisine.")
+    time.sleep(1)
+    print("Here's their address:")
+    print("9040 Blundell Rd #125, Richmond, BC V6Y 2N6")
 else:
     print("Sorry, I do not know what type of food that is.")
     time.sleep(1)
