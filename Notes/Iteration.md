@@ -105,3 +105,26 @@ for i in range(5):
 ```
 
 Simply put, `i` is a counter. It counts how many times we're looping.
+
+## `range(<number>)` function
+
+`range()` is a function that gives you a sequence of numbers starting at 0 by default. It stops before the number that you provide as an input.
+```python
+range(100) -> Sequence(0, 1, 2, ..., 99)
+```
+We can modify `range()` to start, stop, and count up/down by different numbers.
+```python
+range(<start>, <stop>, <step>)
+```
+e.g.
+```python
+range(0, 100)       # Sequence(0, 1, ..., 99)
+range(-10, 10)      # Sequence(-10, -9, ..., 9)
+range(0, 100, 2)    # Sequence(0, 2, 4, ..., 98)
+range(100, 0, 1)    # Sequence(100, 99, ..., 1)
+```
+
+
+# `break`
+
+`break` allows us to **stop** the looping. Once `break` is reached, no other code underneath it in the loop will run.

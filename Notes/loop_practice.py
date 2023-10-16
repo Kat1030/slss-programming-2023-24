@@ -58,10 +58,26 @@ else:
 for _ in range(20):
     print("Mr. Ubial is cool")
 
-# Repeat somehting five times and we want to keep track of how many iterations we've completed
+# Repeat something five times and we want to keep track of how many iterations we've completed
 for i in range(5):
     print(i)
 
 # Can you make this start counting at 1?
 for i in range(20):
     print(f"{i + 1}. The quick brown fox...")
+
+# For example: Can we start at another number?
+for i in range(1, 100):
+    print(i)
+
+# Can we count by any other number?
+for i in range(0, 101, 2):
+    print(i)
+
+# Print all even numbers between 1200 and 1500 inclusive
+for i in range(1200, 1501, 2):
+    print(i)
+
+# Print all odd number between -150 and 0 inclusive
+for i in range(-150, 0, 2):
+    print(f"{i + 1}")
