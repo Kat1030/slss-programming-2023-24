@@ -12,7 +12,7 @@ Katrina Chan
 8. A
 9. E
 10. C
-11. E
+11. D
 12. A
 13. B
 14. A
