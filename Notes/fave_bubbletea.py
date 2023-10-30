@@ -38,6 +38,13 @@ for _ in range(NUM_RESPONDANTS):
 
 # Repeat the code above 5 times
 
+# Round to two decimal places
+round(coco_likes, 2)
+round(suntea_likes, 2)
+round(chatime_likes, 2)
+round(bubqueen_likes, 2)
+round(other_likes, 2)
+
 # Print out a summary
 print(f"CoCo Likes: {coco_likes} ({coco_likes / NUM_RESPONDANTS * 100}%)")
 print(f"SunTea Likes: {suntea_likes} ({suntea_likes / NUM_RESPONDANTS * 100}%)")
