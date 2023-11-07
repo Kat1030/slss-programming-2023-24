@@ -41,6 +41,6 @@ intro_string = "My age is"
 my_name = 15
 
 print(intro_string + str(my_age))          # My age is16
-print(intro_string + " " +str(my_age))     # My age is 16
+print(intro_string + " " + str(my_age))     # My age is 16
 print(f{intro_string} {my_age})            # My age is 16
 ```
