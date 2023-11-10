@@ -16,7 +16,7 @@ with open("./data.csv") as f:
 profile = [
     "Bubble World",
     "Chef Hung",
-    "Uncle Fatih's"
+    "Uncle Fatih's",
     "Guadalupe (MBC)",
     "Steve's Poke Bar"
 ]
@@ -54,4 +54,4 @@ with open("./data.csv") as f:
             top_sim_name = current_name
 
 print("TOP SIMILAR PERSON!")
-print(f"{top_sim_name} - Score: {top_sim_name}")
+print(f"{top_sim_name} - Score: {top_sim_score}")
