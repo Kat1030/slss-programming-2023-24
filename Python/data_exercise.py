@@ -97,4 +97,19 @@ with open("./data_example.csv", encoding="utf-8") as f:
 # Problem 8:
 # Sorry, no answer for the above one. This one is a challenge question.
 # Can you design a way to find the most popular food?
+top_food = 0
+top_name = ""
 
+with open("./data_example.csv", encoding="utf-8") as f:
+    current_food = 0
+
+    for line in f:
+        list = line.split(",")
+        current_food = list[1]
+
+        for item in list:
+            if item in current_food:
+                top_food += 1
+    if current_food > top_food:
+        top_food = current_food
+    print(top_food)
