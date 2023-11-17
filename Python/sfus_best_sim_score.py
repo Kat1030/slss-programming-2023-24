@@ -25,7 +25,7 @@ profile = [
 top_sim_score = 0
 top_sim_name = ""
 
-with open("./data.csv") as f:
+with open("./sfu_data.csv") as f:
     # Throw away the header
     header = f.readline()
 
