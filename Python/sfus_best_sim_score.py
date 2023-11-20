@@ -7,7 +7,7 @@
 # Link our similarity score algo to the data
 
 # Open the file
-with open("./data.csv") as f:
+with open("./sfu_data.csv") as f:
     
     # Read the first line of data
     f.readline()

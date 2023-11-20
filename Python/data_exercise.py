@@ -101,15 +101,18 @@ top_food = 0
 top_name = ""
 
 with open("./data_example.csv", encoding="utf-8") as f:
-    current_food = 0
-
     for line in f:
         list = line.split(",")
-        current_food = list[1]
+        
+        current_food = 0
+        current_name = list[1]
 
         for item in list:
-            if item in current_food:
-                top_food += 1
+            if item in current_name:
+                current_food += 1
+
     if current_food > top_food:
         top_food = current_food
-    print(top_food)
+        top_name = current_name
+
+    print(f"{top_name}! Score: {top_food}")
