@@ -20,3 +20,7 @@ def area_of_a_square(sidelength: float):
 
 area_of_a_square(12.2)
 ```
+
+## Signature
+
+The signature of a function contains the name of the function, its inputs/parameters/type, and the return type.
