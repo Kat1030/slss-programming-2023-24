@@ -63,3 +63,34 @@ def search(l : list, item: Any) -> list:
 
 	return -1
 ```
+
+
+## Recursion
+
+Recursion is an elegant way to repeat a pattern.
+
+Fractals are examples of patterns that can be described recursively.
+
+A recursive **function** must have three parts:
+1. A *function*
+2. A call to itself inside of hte body code block
+3. A _base case_
+	1. Where the function stops calling itself
+
+### Fibonacci Sequence and Recursion
+```
+Fibonacci Sequence:
+1  2  3
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
+		 x
+
+fib(1) = 1
+fib(2) = 1
+fib(3) = fib(2) + fib(1)
+	   =   1    +   1
+fib(4) = fib(3)          + fib(2)
+	   =   2             +   1
+	   = fib(2) + fib(1) + fib(2)
+	   =   1    +   1    +   1
+fib(100) = fib(99) + fib(98)
+```
