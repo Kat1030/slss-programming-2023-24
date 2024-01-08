@@ -66,3 +66,10 @@ with Image.open("./Images/best_pizza.jpg") as im:
                 im.putpixel((x, y), black_pixel)
 
     im.save("./Images/result.jpg")
+
+
+def pixel_to_grayscale(pixel: tuple) -> tuple:
+    """Returns a grayscale version of the given pixel"""
+    gray = str(pixel[0] * 0.3 + pixel[1] * 0.59 + pixel[2] * 0.11)
+
+    return (gray, gray, gray)
