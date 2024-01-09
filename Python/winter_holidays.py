@@ -35,10 +35,13 @@ def winter_holiday(good_or_bad: str) -> str:
 
     good_or_bad = input("Was your Winter Break good or bad?")
 
+    good_break = random.choice(good)
+    bad_break = random.choice(bad)
+
     if good_or_bad.lower().strip(",.?!") in "good":
-        return random.choice[good]
+        return good_break
     elif good_or_bad.lower().strip(".,?!") in "bad":
-        return random.choice[bad]
+        return bad_break
 
 print(winter_holiday)
 
