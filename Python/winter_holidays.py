@@ -12,14 +12,14 @@ import random
 # Please do not use ChatGPT or any other LLM
 
 good = [
-    "I got lots of stuffies for Christmas."
-    "I went on a trip with my family."
-    "I shopped for presents at Richmond Centre."
+    "I got lots of stuffies for Christmas.",
+    "I went on a trip with my family.",
+    "I shopped for presents at Richmond Centre.",
     "My friends came over to my house."
 ]
 
 bad = [
-    "I went to Grouse Mountain and it was very cold."
+    "I went to Grouse Mountain and it was very cold.",
     "My mom forced me to do chores."
 ]
 
@@ -35,15 +35,12 @@ def winter_holiday(good_or_bad: str) -> str:
 
     good_or_bad = input("Was your Winter Break good or bad?")
 
-    good_break = random.choice(good)
-    bad_break = random.choice(bad)
-
     if good_or_bad.lower().strip(",.?!") in "good":
-        return good_break
+        return print(random.choice(good))
     elif good_or_bad.lower().strip(".,?!") in "bad":
-        return bad_break
-
-print(winter_holiday)
+        return print(random.choice(bad))
+    else:
+        return print("Sorry, I only take good or bad events.")
 
 def main() -> None:
     # Runs all the things we want to test in our .py file
