@@ -8,26 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "07aacffa9d9cab16",
+            "id": "5909d239047c59b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Markdown (Re)Introduction.md",
+                "file": "Lists.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2a188d9aceddfd42",
+            "id": "fd161cd456914551",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "Natural Language Processing.md",
-                "mode": "source",
-                "source": false
+                "currentVersion": "1.5.3"
               }
             }
           }
@@ -82,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "08f69dc29ba3f0f3",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Natural Language Processing.md",
+                "file": "Lists.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Natural Language Processing.md",
+                "file": "Lists.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Natural Language Processing.md"
+                "file": "Lists.md"
               }
             }
           },
@@ -148,7 +147,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -170,10 +171,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a188d9aceddfd42",
+  "active": "fd161cd456914551",
   "lastOpenFiles": [
+    "Functions.md",
+    "Recommendation Systems.md",
+    "Strings.md",
+    "Lists.md",
+    "Type.md",
+    "semester_evaluator.py",
+    "world_traveller.py",
+    "mcdolands.py",
+    "olympic_judging.py",
+    "Numbers.md",
+    "age_in_2049.py",
+    "n_point_system_practice.py",
+    "chip_rater.py",
     "Markdown (Re)Introduction.md",
     "Natural Language Processing.md",
+    "pumpkin_drawing.py",
+    "fave_bubbletea.py",
+    "number_practice.py",
+    "Boolean.md",
+    "Iteration.md",
+    "Terminal.md",
+    "Errors.md",
+    "Modules.md",
+    "Conditionals.md",
+    "Design.md",
+    "Headers.md",
+    "Untitled.canvas",
     "cheetahpic.md"
   ]
 }
