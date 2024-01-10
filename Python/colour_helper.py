@@ -19,11 +19,16 @@ def pixel_to_string(pixel: tuple) -> str:
 
     if g > 120 and r < 140 and b < 150:
         return "green"
-    
-    # TODO: Implement detecting the colour red
     if g < 25 and b < 25 and r > 150:
         return "red"
-
+    if g > 150 and b < 25 and r > 200:
+        return "yellow"
+    if g >= 60 and b < 50 and r < 50:
+        return "jelly bean green"
+    if g < 90 and b > 90 and r < 90:
+        return "blue"
+    if g < 100 and b > 100 and r > 150:
+        return "pink"
 
 
 from PIL import Image

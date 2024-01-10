@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "fd161cd456914551",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.3"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,7 +160,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fd161cd456914551",
+  "active": "d1bb4c1ccba95f47",
   "lastOpenFiles": [
     "Functions.md",
     "Recommendation Systems.md",
