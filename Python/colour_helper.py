@@ -19,6 +19,11 @@ def pixel_to_string(pixel: tuple) -> str:
 
     if g > 120 and r < 140 and b < 150:
         return "green"
+    
+    # TODO: Implement detecting the colour red
+    if g < 25 and b < 25 and r > 150:
+        return "red"
+
 
 
 from PIL import Image
