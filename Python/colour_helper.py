@@ -29,6 +29,8 @@ def pixel_to_string(pixel: tuple) -> str:
         return "blue"
     if g < 100 and b > 100 and r > 150:
         return "pink"
+    if g < 100 and b < 100 and r > 150:
+        return "ball red"
 
 
 from PIL import Image
