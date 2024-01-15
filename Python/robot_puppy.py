@@ -10,13 +10,8 @@ import colour_helper
     # You might want to try list append and the sum function
 
 ball_image = Image.open("./Images/Red Ball.jpeg")
-red_pixels = []
-red_y_pixels = []
-red_x_pixels = []
-amount_of_pixels = 0
-pixel_on_y = 0
-pixel_on_x = 0
-
+red_pixels_x = []
+red_pixels_y = []
 
 # Visit every pixel in the image
 for y in range(ball_image.height):
@@ -25,9 +20,13 @@ for y in range(ball_image.height):
 
         # If that pixel is red, store it's location
         if colour_helper.pixel_to_string(current_pixel) == "ball red":
-            red_pixels.append((x, y))
-            amount_of_pixels += 1
+            red_pixels_x.append(x)
+            red_pixels_y.append(y)
 
-print(pixel_on_y)
+avg_x = sum(red_pixels_x) / len(red_pixels_x)
+avg_y = sum(red_pixels_y) / len(red_pixels_y)
+
+print(f"Centre of Red Ball: ({round(avg_x, 2)}, {round(avg_y, 2)})")
 
 ball_image.close()
+
