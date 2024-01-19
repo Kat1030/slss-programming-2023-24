@@ -48,6 +48,7 @@ def find_all_songs(artist: str) -> list:
                     songs.append((
                         line['artist'],
                         line['song_title'],
+                        line['valence'],
                         line['danceability']
                     ))
 
@@ -57,9 +58,37 @@ def find_all_songs(artist: str) -> list:
     
 
 # print(drake_songs)
+drake_songs = find_all_songs("drake")
 ed_sheeran_songs = find_all_songs("ed sheeran")
 
 # Print only the drake songs that have a danceability of .5 or higher
-for song in ed_sheeran_songs:
-    if float(song[-1]) >= 0.5:
-            print(song)
+# for song in ed_sheeran_songs:
+    # if float(song[-1]) >= 0.5:
+            # print(song)
+
+
+# --- Sort using SELECTION sort from smallest to biggest
+    # - Danceability
+            
+# Starting at the beginning of the list until the end
+for i, song in enumerate(drake_songs):
+    # Set the current item to the best smallest danceability
+    smallest_danceability = song[-1]
+    smallest_idx = i
+            
+    # For the rest of the list
+    for j in range(i + 1, len(drake_songs)):
+        # If the current item is smaller than smallest
+        if drake_songs[j][-1] > smallest_danceability:
+            # Set the smallest danceability to the current
+            smallest_danceability = drake_songs[j][-1]
+            smallest_idx = j
+
+    # Swap the smallest danceability with the current item
+    drake_songs[i], drake_songs[smallest_idx] = (
+        drake_songs[smallest_idx],
+        drake_songs[i]
+        )
+    
+for song in drake_songs:
+    print(song)
